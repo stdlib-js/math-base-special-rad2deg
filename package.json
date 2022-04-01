@@ -1,0 +1,33 @@
+{
+  "name": "@stdlib/math-base-special-rad2deg",
+  "version": "0.0.0",
+  "description": "Convert an angle from radians to degrees.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-rad2deg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "trig",
+    "trigonometry",
+    "geometry",
+    "radians",
+    "degrees",
+    "angle",
+    "convert"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
