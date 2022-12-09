@@ -18,7 +18,9 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -37,13 +39,13 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/constants-float64-pi": "^0.0.x",
     "@stdlib/utils-library-manifest": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.x",
     "@stdlib/constants-float64-eps": "^0.0.x",
     "@stdlib/constants-float64-ninf": "^0.0.x",
+    "@stdlib/constants-float64-pi": "^0.0.x",
     "@stdlib/constants-float64-pinf": "^0.0.x",
     "@stdlib/constants-float64-two-pi": "^0.0.x",
     "@stdlib/math-base-assert-is-nan": "^0.0.x",
