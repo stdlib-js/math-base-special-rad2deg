@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-rad2deg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert an angle from radians to degrees.",
   "license": "Apache-2.0",
   "author": {
@@ -39,7 +39,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-napi-unary": "^0.1.0",
+    "@stdlib/math-base-napi-unary": "^0.1.1",
     "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
