@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@esm/index.mjs';
+import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@v0.2.0-esm/index.mjs';
 ```
 
 #### rad2deg( x )
@@ -93,7 +93,7 @@ d = rad2deg( NaN );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import TWO_PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-two-pi@esm/index.mjs';
-import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@esm/index.mjs';
+import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@v0.2.0-esm/index.mjs';
 
 var r;
 var d;
