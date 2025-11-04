@@ -3,7 +3,34 @@
   "version": "0.2.3",
   "description": "Convert an angle from radians to degrees.",
   "license": "Apache-2.0",
-  "main": "./index.js",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": false,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -12,6 +39,42 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/math-base-napi-unary": "^0.2.3",
+    "@stdlib/utils-library-manifest": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+  },
+  "devDependencies": {
+    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/constants-float64-eps": "^0.2.2",
+    "@stdlib/constants-float64-ninf": "^0.2.2",
+    "@stdlib/constants-float64-pi": "^0.2.2",
+    "@stdlib/constants-float64-pinf": "^0.2.2",
+    "@stdlib/constants-float64-two-pi": "^0.2.2",
+    "@stdlib/math-base-assert-is-nan": "^0.2.2",
+    "@stdlib/math-base-special-abs": "^0.2.2",
+    "@stdlib/random-array-uniform": "^0.2.1",
+    "@stdlib/utils-try-require": "^0.2.2",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdmath",
@@ -25,6 +88,83 @@
     "angle",
     "convert"
   ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "rad2deg",
+      "alias": "rad2deg",
+      "pkg_desc": "convert an angle from radians to degrees",
+      "desc": "converts an angle from radians to degrees",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            -12.566370614359172,
+            -6.283185307179586,
+            -3.141592653589793,
+            -1.5707963267948966,
+            -0.7853981633974483,
+            -0.5,
+            -0.25,
+            -0.1,
+            0,
+            0.1,
+            0.25,
+            0.5,
+            0.7853981633974483,
+            1,
+            1.5707963267948966,
+            2,
+            3.141592653589793,
+            4,
+            6.283185307179586,
+            12.566370614359172
+          ]
+        }
+      ],
+      "output_policy": "same",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "rad2deg",
+        "radians",
+        "degrees",
+        "angle",
+        "convert",
+        "trigonometry",
+        "geometry"
+      ],
+      "extra_keywords": []
+    }
+  },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
