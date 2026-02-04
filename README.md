@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-rad2deg/tags). For example,
+
+```javascript
 import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@v0.2.4-deno/mod.js';
 ```
 
@@ -89,7 +94,7 @@ d = rad2deg( NaN );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
 import TWO_PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-two-pi@deno/mod.js';
-import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@v0.2.4-deno/mod.js';
+import rad2deg from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rad2deg@deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
